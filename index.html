@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>El titulo de mi pagina JS</h1>
+    
+
+    <p>Hora: <span id="hora"></span></p>
+    <div class="container-clock">              <!--codigos html = LA HORA-->
+        <h1 id="time">00:00:00</h1>
+        <p id="date">date</p>
+    </div>
+    
+    
+    <div id="contador">00:00:00</div>
+    <div id="botones">
+        <button onclick="EncenderCrono();">Encender</button>
+        <button onclick="PararCrono();">Parar</button>          <!--codigos html = EL CRONOMETRO-->
+        <button onclick="IniciarCrono();">Reiniciar</button>
+    </div>
+    
+
+
+    <h2>Ejercicio de Arrays</h2>
+    <p>Introduce numeros separados por comas</p>
+    <input type="text" id="numerosEjem"></input>
+    <input type="button" value="Cargar ejemplo" onclick="cargarEjemplo();"></input>
+    <br><br><input type="button" value="Calcular" onclick="calcular();">
+    <br><br><input type="button" value="Reiniciar" onclick="reiniciar();">
+    <p id="array"></p>
+    <p id="Resultado"></p>
+<hr>
+    <p id="frases"></p>
+<hr>
+<form>
+    <input type="text" id="colores" placeholder="Ingrese colores"><br>
+    <button onclick="agregaColor(event);">Insertar</button><br>
+    </form>
+    <div>
+        <ul id="listaC">
+           
+        </ul>
+    </div>
+
+
+
+
+
+    <script src="js/codigo.js"></script>
+</body>
+</html>
